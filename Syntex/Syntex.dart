@@ -66,6 +66,7 @@ import 'dart:io';
 //   ///Const(A const object and its fields can't be changed: they're immutable)
 //     ///A final variable can be set only once and a const variable is a compile-time constant
 //   ///(Const variables are implicitly final)
+     //Instance variables can be final but not const
 //
 //   final bobName = 'Bob'; //we can't change the value of this variable
 //   final String nickName = 'Bobby'; // We can't change the value of this variable
@@ -74,6 +75,9 @@ import 'dart:io';
 //   //At the class level mark it static const
 //   //It also use to create constant values,as well as to
 //   // declare constructors that create constant values
+
+
+
 //
 //   var foo = const [];
 //   final bar1 = const [];
@@ -81,8 +85,12 @@ import 'dart:io';
 //   const double atm = 1.045 * bar;
 //   print(atm);
 //
-//
+//variable declaration using 'dynamic' keyword
+// dynamic myVar = 'Saket';
+// myVar = true; //we can assign a diff. type of data
+// myVar = 90; //assigning boolean value
 // }
+
 
 
 ///Operator
