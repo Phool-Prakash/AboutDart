@@ -236,5 +236,5 @@ void main() {
   ///Bitwise shift(<<,>>,>>>)
 
   //Left shift(<<)
-  print(3<<1);
+  print(3 << 1);
 }

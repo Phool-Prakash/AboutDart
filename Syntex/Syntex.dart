@@ -2,7 +2,7 @@ import 'dart:io';
 
 ///Variables
 
-  //1.Null safety
+//1.Null safety
 
 // late String urName;
 // void main(){
@@ -45,7 +45,6 @@ import 'dart:io';
 //
 //
 
-
 /// Late variables
 
 //      ///Declaring a non-nullable variable that's initialized after its declaration
@@ -59,14 +58,14 @@ import 'dart:io';
 //   // print(urNameIs);
 //
 
-
 ///Final and Const
 
-//   ///Final( object can't be modified, its fields can be changed.)
-//   ///Const(A const object and its fields can't be changed: they're immutable)
-//     ///A final variable can be set only once and a const variable is a compile-time constant
-//   ///(Const variables are implicitly final)
-     //Instance variables can be final but not const
+//Final( object can't be modified, its fields can be changed.)
+//Const(A const object and its fields can't be changed: they're immutable)
+//A final variable can be set only once and a const variable is a compile-time constant
+//(Const variables are implicitly final)
+
+//Instance variables can be final but not const
 //
 //   final bobName = 'Bob'; //we can't change the value of this variable
 //   final String nickName = 'Bobby'; // We can't change the value of this variable
@@ -75,8 +74,6 @@ import 'dart:io';
 //   //At the class level mark it static const
 //   //It also use to create constant values,as well as to
 //   // declare constructors that create constant values
-
-
 
 //
 //   var foo = const [];
@@ -87,14 +84,12 @@ import 'dart:io';
 //
 //variable declaration using 'dynamic' keyword
 // dynamic myVar = 'Saket';
-// myVar = true; //we can assign a diff. type of data
+// my
+// we can assign a diff. type of data
 // myVar = 90; //assigning boolean value
 // }
 
-
-
 ///Operator
-
 
 // void main(){
 //   double a =29;
@@ -132,7 +127,7 @@ import 'dart:io';
 //   // is! :True if the object doesn't have the specified type
 //
 //   ///Cascade Notation ( ? req. )
-     //Cascade (.., ?..) allow you to make a sequence of operations on the same object.
+//Cascade (.., ?..) allow you to make a sequence of operations on the same object.
 //
 //   ///Spread Operators [...a+b]
 //   ///It's evaluate an expression that yields a collection,
@@ -142,16 +137,14 @@ import 'dart:io';
 //
 // }
 
-
 ///About Metadata
 
+//It gives additional information about the code.
+//A metadata annotation begins with the character @,
+//followed by either a reference to a compile-time constant or
+// call to a constant constructor
 
-     //It gives additional information about the code.
-    //A metadata annotation begins with the character @,
-   //followed by either a reference to a compile-time constant or
-  // call to a constant constructor
-
- // @override, @Deprecated, @pragma this is example of Metadata annotation
+// @override, @Deprecated, @pragma this is example of Metadata annotation
 
 //Example
 //   class Todo{
@@ -161,32 +154,30 @@ import 'dart:io';
 //     Todo(this.who,this.what); //This is Metadata annotation
 //   }
 
-
 ///About Libraries and Imports
 
+//It can help to create a modular and shareable code base
 
-  //It can help to create a modular and shareable code base
+//Using Libraries
 
-  //Using Libraries
+// URI (Uniform resource identifier and URLs (Uniform resource locators)
 
-     // URI (Uniform resource identifier and URLs (Uniform resource locators)
-
-    //Use 'import' to specify how a namespace from one library is used in the scope of another library
-   //'import' is a URL specifying the library. (For built-in libraries,the URL has the special dart: scheme
-   //For other libraries (like file system path or the package:scheme.)
-  //The package: scheme specifies libraries provided by a package manager(pub tool)
+//Use 'import' to specify how a namespace from one library is used in the scope of another library
+//'import' is a URL specifying the library. (For built-in libraries,the URL has the special dart: scheme
+//For other libraries (like file system path or the package:scheme.)
+//The package: scheme specifies libraries provided by a package manager(pub tool)
 
 ///Importing only part of a library
 
-  //import only foo
-  // import 'package:lib1/lib1.dart' show foo;
-  //
-  // //import all name except foo
-  // import 'package:lib2/lib2.dart' hide foo;
+//import only foo
+// import 'package:lib1/lib1.dart' show foo;
+//
+// //import all name except foo
+// import 'package:lib2/lib2.dart' hide foo;
 
 ///Lazily loading a library
 
-   //Deferred loading (also called lazy loading)
-  //*Reduce a web app's initial startup time
- //*Perform A/B testing
+//Deferred loading (also called lazy loading)
+//*Reduce a web app's initial startup time
+//*Perform A/B testing
 //Load rarely used functionality,such as optional screens and dialogs.
